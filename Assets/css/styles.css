@@ -71,7 +71,7 @@ h6 {
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8rem var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -97,7 +97,8 @@ h6 {
     justify-content: center;
 }
 
-.intro-img img {
+.intro-img img,
+.intro-img svg {
     max-width: 100%;
     height: auto;
 }
@@ -179,7 +180,7 @@ p {
 .grid-one-content {
     min-height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
 }
 
@@ -229,4 +230,34 @@ p {
 
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid var(--light-gray);
+}
+
+tfoot td, table th {
+    background: var(--light-gray);
 }
