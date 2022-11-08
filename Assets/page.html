@@ -15,14 +15,16 @@
 </head>
 
 <body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#home">LOGO</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">INTRO</a></li>
                     <li><a href="#grid-one">GRID-ONE</a></li>
                     <li><a href="#gallery">GALLERY</a></li>
@@ -257,5 +259,7 @@
             <footer id="footer" class="footer white-bg">
                 <p><a href="">Feito por Fabrício Souza</a></p>
             </footer>
+
+            <a class="back-to-top" href="#home">⇧</a>
 </body>
 </html>
