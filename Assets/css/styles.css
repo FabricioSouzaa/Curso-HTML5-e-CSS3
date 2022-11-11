@@ -418,4 +418,8 @@ tfoot td, table th {
     .menu-spacing {
         display: none;
     }
+
+    h1 {
+        width: 100%;
+    }
 }
